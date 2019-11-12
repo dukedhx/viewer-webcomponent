@@ -8,7 +8,7 @@
     "pretest": "rollup -c",
     "test": "mocha",
     "coverage": "nyc npm run test",
-    "prepublish": "BUILD=production npm test",
+    "prepublish": "npm test",
     "standard": "npx standard 'lib/**/*.js' --fix"
   },
   "repository": "dukedhx/viewer-webcomponent",

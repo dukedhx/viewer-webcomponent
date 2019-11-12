@@ -1,0 +1,26 @@
+{
+  "name": "forge-viewer-web-component",
+  "description": "Forge Viewer Web Component",
+  "main": "dist/viewer-component.js",
+  "authors": [
+    "Bryan Huang"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "forge",
+    "viewer",
+    "autodesk",
+    "web",
+    "component",
+    "semantic",
+    "web"
+  ],
+  "homepage": "https://github.com/dukedhx/viewer-webcomponent",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
