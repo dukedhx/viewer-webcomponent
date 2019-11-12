@@ -1,0 +1,38 @@
+{
+  "name": "forge-viewer-web-component",
+  "version": "1.0.1-rc.0",
+  "description": "Forge Viewer Web Component",
+  "main": "dist/forge-viewer-web-component.js",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production",
+    "pretest": "rollup -c",
+    "test": "mocha",
+    "coverage": "nyc npm run test",
+    "prepublish": "BUILD=production npm test",
+    "standard": "npx standard 'lib/**/*.js' --fix"
+  },
+  "repository": "dukedhx/viewer-webcomponent",
+  "keywords": [
+    "forge",
+    "viewer",
+    "autodesk",
+    "web component",
+    "semantic web"
+  ],
+  "author": "Bryan Huang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dukedhx/viewer-webcomponent/issues"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "rollup": "^1.26.5",
+    "rollup-plugin-terser": "^5.1.2"
+  }
+}
