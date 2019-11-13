@@ -19,7 +19,7 @@ One major incentive for us to use custom elements is that they are expressed as 
 
 ## Demo
 
-https://dukedhx.github.io/viewer-webcomponent
+https://dukedhx.github.io/viewer-webcomponent/
 
 ## Getting Started
 
