@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/dukedhx/viewer-webcomponent.svg?branch=master)](https://travis-ci.org/dukedhx/viewer-webcomponent)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/dukedhx/forge-viewer-web-component)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/forge-viewer-web-component)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 [![Standard](https://img.shields.io/badge/Standard-Style-green.svg)](https://github.com/standard/standard)
 [![Autodesk Forge](https://img.shields.io/badge/Autodesk-Forge-orange.svg)](https://forge.autodesk.com/)
@@ -131,7 +131,7 @@ And to load multiple models with load options and a specific version version sim
  </forge-viewer>
 ```
 
-We can use take advantage of the [shadow DOM]() and hide our Viewer elements away from the rest of the app so they are temper-proof - unfortunately Viewer's built-in toolbar does not support shadow DOM so we will need to turn it off with:
+We can use take advantage of the [shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) and hide our Viewer elements away from the rest of the app so they are temper-proof - unfortunately Viewer's built-in toolbar does not support shadow DOM so we will need to turn it off with:
 
 ```
 <forge-viewer GUI='false' ...>
@@ -151,7 +151,7 @@ And you can your Viewer in style - specify width, height and position and even t
 </forge-viewer>
 ```
 
-Everything is exposed via the "AutodeskForge.Webcomponent" global object as well - so you can hook your settings like callbacks, events easily - but be sure to defer the initialization with by flipping the "defer-load" attribute: 
+Everything is exposed via the `AutodeskForge.Webcomponent` global object as well - so you can hook your settings like callbacks, events easily - but be sure to defer the initialization with by flipping the "defer-load" attribute: 
 
 ```
 <forge-viewer delay-load='true' name='myNamedViewer' >
@@ -214,6 +214,14 @@ AutodeskForge.WebComponent.terminate().then(()=>AutodeskForge.WebComponent.start
 
 Kindly log an issue [here](https://github.com/dukedhx/viewer-webcomponent/issues).
 
+> The text contents in the `forge-viewer` blocks are incorrectly visible before the component script is loaded...
+
+You can use CSS to safely hide those:
+
+```
+forge-viewer options{display:none}
+//...
+```
 
 ## License
 
