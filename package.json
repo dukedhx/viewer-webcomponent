@@ -1,6 +1,6 @@
 {
   "name": "forge-viewer-web-component",
-  "version": "1.0.1-rc.0",
+  "version": "1.0.1-rc.1",
   "description": "Forge Viewer Web Component",
   "main": "dist/forge-viewer-web-component.js",
   "scripts": {
