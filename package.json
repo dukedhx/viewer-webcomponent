@@ -33,6 +33,6 @@
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
     "rollup": "^1.26.5",
-    "rollup-plugin-terser": "^5.1.2"
+    "rollup-plugin-terser": "^5.1.3"
   }
 }
